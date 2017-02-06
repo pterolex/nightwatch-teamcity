@@ -1,3 +1,3 @@
 'use strict';
 
-modules.exports = require('./src/formatter.js');
+module.exports = require('./src/formatter.js');
