@@ -1,6 +1,6 @@
 {
   "name": "nightwatch-teamcity",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Nightwatch tests formatter for TeamCity CI server",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,11 @@
     "ci",
     "test"
   ],
-  "author": "Alexey Zaslavsky",
+  "repository": {
+      "type": "git",
+      "url": "git://github.com:pterolex/nightwatch-teamcity.git"
+  },
+  "author": "Alexey Zaslavsky (https://github.com/pterolex)",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^3.15.0"
