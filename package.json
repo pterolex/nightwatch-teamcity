@@ -1,0 +1,20 @@
+{
+  "name": "nightwatch-teamcity",
+  "version": "0.1.0",
+  "description": "Nightwatch tests formatter for TeamCity CI server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "teamcity",
+    "nightwatch",
+    "ci",
+    "test"
+  ],
+  "author": "Alexey Zaslavsky",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.15.0"
+  }
+}
