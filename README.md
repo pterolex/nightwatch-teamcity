@@ -1,4 +1,6 @@
 # Nightwatch.js tests formatter for TeamCity
+[![npm version](https://badge.fury.io/js/nightwatch-teamcity.svg)](https://badge.fury.io/js/nightwatch-teamcity)
+[![NPM](https://nodei.co/npm/nightwatch-teamcity.png?compact=true)](https://npmjs.org/package/nightwatch-teamcity)
 
 ## Install
 

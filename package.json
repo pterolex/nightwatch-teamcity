@@ -14,7 +14,7 @@
   ],
   "repository": {
       "type": "git",
-      "url": "git://github.com:pterolex/nightwatch-teamcity.git"
+      "url": "git://github.com/pterolex/nightwatch-teamcity.git"
   },
   "author": "Alexey Zaslavsky (https://github.com/pterolex)",
   "license": "MIT",
