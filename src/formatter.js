@@ -19,17 +19,16 @@ function escapeTeamCityMessage(str) {
 }
 
 function formatTestSuite(name, results) {
-    const escapedTestSuitename = escapeTeamCityMessage(name);
     const completed = results.completed;
     const skipped = results.skipped;
 
-    console.log(`##teamcity[testSuiteStarted name='${escapedTestSuitename}']`);
+    tsm.testSuiteStarted({ name });
 
     Object.keys(completed).forEach( testName => formatTest(testName, completed[testName]) );
 
     skipped.forEach( testName => tsm.testIgnored({ name: testName}));
 
-    console.log(`##teamcity[testSuiteFinished name='${escapedTestSuitename}']`);
+    tsm.testSuiteFinished({ name });
 }
 
 function formatTest(name, result) {
