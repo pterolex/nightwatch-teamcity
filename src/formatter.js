@@ -1,5 +1,7 @@
 'use strict';
 
+var tsm = require('teamcity-service-messages');
+
 function escapeTeamCityMessage(str) {
     if (!str) {
         return '';
@@ -19,10 +21,13 @@ function escapeTeamCityMessage(str) {
 function formatTestSuite(name, results) {
     const escapedTestSuitename = escapeTeamCityMessage(name);
     const completed = results.completed;
+    const skipped = results.skipped;
 
     console.log(`##teamcity[testSuiteStarted name='${escapedTestSuitename}']`);
 
     Object.keys(completed).forEach( testName => formatTest(testName, completed[testName]) );
+
+    skipped.forEach( testName => tsm.testIgnored({ name: testName}));
 
     console.log(`##teamcity[testSuiteFinished name='${escapedTestSuitename}']`);
 }
