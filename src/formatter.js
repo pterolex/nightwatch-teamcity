@@ -51,12 +51,19 @@ function formatTest(name, result) {
     console.log(`##teamcity[testFinished name='${escapedTestName}' duration='${time}']`);
 }
 
-module.exports = {
-    write(result, options, done) {
-        const testSuites = result.modules;
-
-        Object.keys(testSuites).forEach( name => formatTestSuite(name, testSuites[name]) );
-
+function format(result, done) {
+    const testSuites = result.modules;
+    Object.keys(testSuites).forEach(name =>
+        formatTestSuite(name, testSuites[name])
+    );
+    if (done) {
         done();
     }
+}
+
+module.exports = {
+    write(result, options, done) {
+        format(result, done);
+    },
+    format: format
 };
