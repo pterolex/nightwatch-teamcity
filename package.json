@@ -4,7 +4,8 @@
   "description": "Nightwatch tests formatter for TeamCity CI server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "keywords": [
     "teamcity",
@@ -19,7 +20,9 @@
   "author": "Alexey Zaslavsky (https://github.com/pterolex)",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.17.0"
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
   },
   "dependencies": {
     "teamcity-service-messages": "^0.1.8"
