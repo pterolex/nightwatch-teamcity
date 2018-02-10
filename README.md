@@ -1,6 +1,8 @@
 # Nightwatch.js tests formatter for TeamCity
 [![NPM](https://nodei.co/npm/nightwatch-teamcity.png?compact=true)](https://npmjs.org/package/nightwatch-teamcity)
 
+TeamCity formatter for [Nightwatch.js](http://nightwatchjs.org/) end-to-end testing framework.
+
 ## Install
 
 `npm install nightwatch-teamcity --save-dev`
@@ -20,14 +22,14 @@ var HtmlReporter = require("nightwatch-html-reporter");
 var teamCityFormatter = require("nightwatch-teamcity").format;
 
 var reporter = new HtmlReporter({
-  reportsDirectory: "./reports",
+    reportsDirectory: "./reports",
 });
 
 module.exports = {
-  write: function(results, options, done) {
-    teamCityFormatter(results);
-    reporter.fn(results, done);
-  }
+    write: function(results, options, done) {
+        teamCityFormatter(results);
+        reporter.fn(results, done);
+    }
 };
 
 ```
