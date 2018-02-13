@@ -4,7 +4,7 @@
   "description": "Nightwatch tests formatter for TeamCity CI server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "yarn run lint",
     "lint": "eslint ."
   },
   "keywords": [
