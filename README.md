@@ -1,5 +1,6 @@
 # Nightwatch.js tests formatter for TeamCity
-[![NPM](https://nodei.co/npm/nightwatch-teamcity.png?compact=true)](https://npmjs.org/package/nightwatch-teamcity)
+[![npm version](https://badge.fury.io/js/nightwatch-teamcity.svg)](https://badge.fury.io/js/nightwatch-teamcity)
+[![Build Status](https://travis-ci.org/pterolex/nightwatch-teamcity.svg?branch=master)](https://travis-ci.org/pterolex/nightwatch-teamcity)
 
 TeamCity formatter for [Nightwatch.js](http://nightwatchjs.org/) end-to-end testing framework.
 
