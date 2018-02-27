@@ -1,6 +1,6 @@
 {
   "name": "nightwatch-teamcity",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Nightwatch tests formatter for TeamCity CI server",
   "main": "index.js",
   "scripts": {
