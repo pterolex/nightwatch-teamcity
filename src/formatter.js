@@ -53,8 +53,7 @@ function formatTestSuite(name, results) {
 
 function format(result, done) {
     const testSuites = result.modules;
-    Object.keys(testSuites).forEach(name =>
-        formatTestSuite(name, testSuites[name]));
+    Object.keys(testSuites).forEach(name => formatTestSuite(name, testSuites[name]));
 
     if (done) {
         done();
